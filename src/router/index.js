@@ -5,25 +5,26 @@ import Router from 'vue-router'
 // import topMenu from '@/components/topMenu/topMenu'
 // import foot from '@/components/foot/foot'
 import noviceWelfare from '@/components/mainPage/noviceWelfare'
+import indexList from '@/components/mainPage/indexList'
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
+    {
+      path: '/',
+      name: 'indexList',
+      component: indexList
+    },
     {
       path: '/noviceWelfare',
       name: 'noviceWelfare',
       component: noviceWelfare
+    },
+    {
+      path: '/indexList',
+      name: 'indexList',
+      component: indexList
     }
-    // {
-    //   path: '/index',
-    //   name: 'index',
-    //   component: index
-    // }
     // ,
     // {
     //   path: '/foot/foot',

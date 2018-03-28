@@ -1,6 +1,7 @@
 <template>
   <div class="index">
      <topMenu></topMenu>
+    <router-view></router-view>
     <foot></foot>
   </div>
 </template>

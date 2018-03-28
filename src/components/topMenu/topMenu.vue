@@ -13,9 +13,11 @@
     </div>
     <div class="xg-header-bottom light-bg">
       <div class="xg-container">
-        <img />
+        <img src="../../common/images/logo.png" style="margin-top:19px;"/>
         <ul class="xg-tab">
+          <router-link to='indexList'>
           <li><a class="xg-orange">首页</a></li>
+          </router-link>
           <li><a>全部产品</a></li>
           <router-link to='noviceWelfare'>
           <li style="position:relative;"><a>新手福利</a>
