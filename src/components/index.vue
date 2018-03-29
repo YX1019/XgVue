@@ -2,7 +2,7 @@
   <div class="index">
      <topMenu></topMenu>
     <router-view></router-view>
-    <foot></foot>
+    <foot v-if="$route.path!=='/myAcount'"></foot>
   </div>
 </template>
 

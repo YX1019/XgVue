@@ -116,14 +116,25 @@
 </template>
 
 <script>
+// import '../../common/js/jquery-1.11.3.js'
+import $ from 'jquery'
+import '../../common/js/banner.js'
 export default {
   name: 'indexList',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted () {
+    $('.btn').click(function () {
+      alert('111')
+    })
+  },
+  methods: {
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

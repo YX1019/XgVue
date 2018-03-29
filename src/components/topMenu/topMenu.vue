@@ -26,7 +26,9 @@
           </router-link>
           <li><a>信息披露</a></li>
           <li><a>安全保障</a></li>
+          <router-link to='myAcount'>
           <li><a>我的账户</a></li>
+          </router-link>
         </ul>
       </div>
     </div>
