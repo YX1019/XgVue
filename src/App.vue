@@ -2,7 +2,7 @@
   <div id="app">
     <!--<img src="./assets/logo.png">-->
     <!--<topMenu></topMenu>-->
-    <index></index>
+    <router-view></router-view>
     <!--<router-view/>-->
   </div>
 </template>

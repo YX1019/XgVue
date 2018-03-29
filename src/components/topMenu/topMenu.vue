@@ -19,11 +19,11 @@
           <li><a class="xg-orange">首页</a></li>
           </router-link>
           <li><a>全部产品</a></li>
-          <router-link to='noviceWelfare'>
+          <!-- <router-link to='noviceWelfare'> -->
           <li style="position:relative;"><a>新手福利</a>
             <span class="xg-border-fill font12" style="position:absolute;top:-20px;right:-30px;border-radius: 15px 15px 15px 0;">698元红包</span>
           </li>
-          </router-link>
+          <!-- </router-link> -->
           <li><a>信息披露</a></li>
           <li><a>安全保障</a></li>
           <li><a>我的账户</a></li>

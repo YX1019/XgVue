@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-// import index from '@/components/index'
+import index from '@/components/index'
 // import topMenu from '@/components/topMenu/topMenu'
 // import foot from '@/components/foot/foot'
 import noviceWelfare from '@/components/mainPage/noviceWelfare'
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'indexList',
-      component: indexList
+      name: 'index',
+      component: index
     },
     {
       path: '/noviceWelfare',
