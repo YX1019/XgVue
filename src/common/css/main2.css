@@ -263,6 +263,7 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     background: #fff;
 }
 .xg-gradient-horizontal {
+  background:#64adff;
     background: -ms-linear-gradient(left, rgb(80,152,255), rgb(100,173,255));
 	/* IE 10 */
 	background: -moz-linear-gradient(left, rgb(80,152,255), rgb(100,173,255));
@@ -330,7 +331,9 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     background: #e5e5e5;
     margin: 10px 5px;
     display: inline-block;
+  text-align: center;line-height: 32px;
 }
+.xg-user-account-icon span img{height: 16px;}
 .xg-money {
     font-size: 30px;
     margin: 10px 0;

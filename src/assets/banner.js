@@ -99,7 +99,7 @@
                     a.preventDefault();
                     b.pauseControls || i();
                     a = l.index(this);
-                    if (!(m === a || d("." + j + ":animated").size)) {
+                    if (!(m === a || d("." + j + ":animated").length)) {
                         n(a);
                         t(a)
                     }
@@ -115,7 +115,7 @@
                         B = d("." + g + "_nav.prev");
                     c.bind("click", function (a) {
                         a.preventDefault();
-                        if (!d("." + j + ":animated").size) {
+                        if (!d("." + j + ":animated").length) {
                             var c = f.index(d("." + j)),
                                 a = c - 1,
                                 c = c + 1 < w ? m + 1 : 0;
@@ -144,16 +144,16 @@
         })
     }
 })(jQuery, this, 0);
-// $(function () {
-//     $(".f426x240").responsiveSlides({
-//         auto: true,
-//         pager: true,
-//         nav: true,
-//         speed: 300,
-//     });
-//     $(".f160x160").responsiveSlides({
-//         auto: true,
-//         pager: true,
-//         speed: 700,
-//     });
-// });
+$(function () {
+    $(".f426x240").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 300,
+    });
+    $(".f160x160").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 700,
+    });
+});

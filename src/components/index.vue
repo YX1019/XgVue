@@ -2,8 +2,7 @@
   <div class="index">
      <topMenu></topMenu>
      <router-view></router-view>
-     <foot></foot>
-     <div @click='init'>点击</div>
+     <!-- <foot v-if="$route.path!=='/myAcount'"></foot> -->
   </div>
 </template>
 

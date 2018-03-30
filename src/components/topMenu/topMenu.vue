@@ -15,9 +15,9 @@
       <div class="xg-container">
         <img src="../../common/images/logo.png" style="margin-top:19px;"/>
         <ul class="xg-tab">
-          <router-link to='indexList'>
-          <li><a class="xg-orange">首页</a></li>
-          </router-link>
+          <!-- <router-link to='indexList'> -->
+          <li @click="goIndex"><a class="xg-orange">首页</a></li>
+          <!-- </router-link> -->
           <li><a>全部产品</a></li>
           <!-- <router-link to='noviceWelfare'> -->
           <li style="position:relative;"><a>新手福利</a>
@@ -26,7 +26,9 @@
           <!-- </router-link> -->
           <li><a>信息披露</a></li>
           <li><a>安全保障</a></li>
-          <li><a>我的账户</a></li>
+          <!-- <router-link to='myAcount'> -->
+          <li @click="goMyaccount"><a>我的账户</a></li>
+          <!-- </router-link> -->
         </ul>
       </div>
     </div>
@@ -39,7 +41,15 @@ export default {
   name: 'topMenu',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: ' Welcome to Your Vue.js App '
+    }
+  },
+  methods: {
+    goIndex () {
+      this.$router.push({ path: 'indexList' })
+    },
+    goMyaccount () {
+      this.$router.push({ path: 'myAcount' })
     }
   }
 }

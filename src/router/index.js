@@ -6,6 +6,9 @@ import index from '@/components/index'
 // import foot from '@/components/foot/foot'
 import noviceWelfare from '@/components/mainPage/noviceWelfare'
 import indexList from '@/components/mainPage/indexList'
+import myAcount from '@/components/myAcount/myAcount'
+import acount from '@/components/myAcount/acount'
+import user from '@/components/myAcount/user'
 Vue.use(Router)
 
 export default new Router({
@@ -13,18 +16,52 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: index
+      component: index,
+      children: [
+        {
+          path: '/indexList',
+          name: 'indexList',
+          component: indexList
+        },
+        {
+          path: '/myAcount',
+          name: 'myAcount',
+          component: myAcount,
+          children: [
+            {
+              path: 'acount',
+              name: 'acount',
+              component: acount
+            },
+            {
+              path: 'user',
+              component: user
+            }
+          ]
+        }
+      ]
     },
     {
       path: '/noviceWelfare',
       name: 'noviceWelfare',
       component: noviceWelfare
-    },
-    {
-      path: '/indexList',
-      name: 'indexList',
-      component: indexList
     }
+    // {
+    //   path: '/myAcount',
+    //   name: 'myAcount',
+    //   component: myAcount,
+    //   children: [
+    //     {
+    //       path: 'acount',
+    //       name: 'acount',
+    //       component: acount
+    //     },
+    //     {
+    //       path: 'user',
+    //       component: user
+    //     }
+    //   ]
+    // }
     // ,
     // {
     //   path: '/foot/foot',
