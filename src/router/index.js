@@ -35,7 +35,7 @@ export default new Router({
       children: [
         {
           path: 'acount',
-          name:'acount',
+          name: 'acount',
           component: acount
         },
         {
