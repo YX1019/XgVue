@@ -49,7 +49,13 @@
 </template>
 <script>
 export default {
-  name: 'acount'
+  name: 'acount',
+  data () {
+    return {}
+  },
+  methods: {
+
+  }
 }
 </script>
 <style>

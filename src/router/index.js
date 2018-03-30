@@ -23,23 +23,23 @@ export default new Router({
       name: 'noviceWelfare',
       component: noviceWelfare
     },
-    {
-      path: '/indexList',
-      name: 'indexList',
-      component: indexList
-    },
+    // {
+    //   path: '/indexList',
+    //   name: 'indexList',
+    //   component: indexList
+    // },
     {
       path: '/myAcount',
       name: 'myAcount',
       component: myAcount,
       children: [
         {
-          path: 'acount',
+          path: '/',
           name: 'acount',
           component: acount
         },
         {
-          path: 'user',
+          path: '/user',
           component: user
         }
       ]
