@@ -9,6 +9,12 @@ import indexList from '@/components/mainPage/indexList'
 import myAcount from '@/components/myAcount/myAcount'
 import acount from '@/components/myAcount/acount'
 import user from '@/components/myAcount/user'
+import transdetail from '@/components/myAcount/transdetail'
+import bankCard from '@/components/myAcount/bankCard'
+import redPack from '@/components/myAcount/redPack'
+import invitation from '@/components/myAcount/invitation'
+import message from '@/components/myAcount/message'
+
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +47,26 @@ export default new Router({
         {
           path: '/user',
           component: user
+        },
+        {
+          path: '/transdetail',
+          component: transdetail
+        },
+        {
+          path: '/bankCard',
+          component: bankCard
+        },
+        {
+          path: '/redPack',
+          component: redPack
+        },
+        {
+          path: '/invitation',
+          component: invitation
+        },
+        {
+          path: '/message',
+          component: message
         }
       ]
     }

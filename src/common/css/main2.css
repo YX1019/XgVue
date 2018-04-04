@@ -184,6 +184,7 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 .xg-tab li {
     float: left;
     margin-left: 30px;
+    cursor: pointer;
 }
 .line {
     width: 100%;
@@ -484,6 +485,8 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 .xg-user-message li {
     padding: 18px 0;
     border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    float: left;
 }
 .xg-user-message-unread {
     float: left;
@@ -520,6 +523,12 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     height: 112px;
     width: 355px;
     margin: 0 0 20px 35px;
+}
+.redSelected {
+  position: absolute;
+  top: 12px;
+  left: 178px;
+  width: 22px;
 }
 .xg-user-red-bg1 {
     background: url(../images/redPack1.png) no-repeat;

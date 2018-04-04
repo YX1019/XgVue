@@ -29,7 +29,7 @@
   </div>
   <div class="bottom">
     <p>合肥鑫格信息科技服务有限公司  |  网贷有风险，理财需谨慎</p>
-    <p><img src="images/bottomIcon.png"/>备案：皖ICP备17006632号 | 增值电信业务经营许可证编号： 皖B2-20170088 </p>
+    <p><img src="../../common/images/bottomIcon.png"/>备案：皖ICP备17006632号 | 增值电信业务经营许可证编号： 皖B2-20170088 </p>
   </div>
   </div>
 </template>

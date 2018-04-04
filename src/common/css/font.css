@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?u97p6j');
-  src:  url('../fonts/icomoon.eot?u97p6j#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?u97p6j') format('truetype'),
-    url('../fonts/icomoon.woff?u97p6j') format('woff'),
-    url('../fonts/icomoon.svg?u97p6j#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?dnl6ig');
+  src:  url('../fonts/icomoon.eot?dnl6ig#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dnl6ig') format('truetype'),
+    url('../fonts/icomoon.woff?dnl6ig') format('woff'),
+    url('../fonts/icomoon.svg?dnl6ig#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-z-caller:before {
+.icon-xg-back:before {
+  content: "\e697";
+}
+.icon-xg-up:before {
+  content: "\e6a5";
+}
+.icon-xg-down:before {
+  content: "\e6a6";
+}
+.icon-xg-more:before {
+  content: "\e6a7";
+}
+.icon-xg-notice:before {
+  content: "\e65d";
+}
+.icon-xg-caller:before {
   content: "\e624";
 }
