@@ -16,6 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'index',
+      redirect: '/indexList',
       component: index,
       children: [
         {
@@ -29,12 +30,12 @@ export default new Router({
           component: myAcount,
           children: [
             {
-              path: 'acount',
+              path: '/acount',
               name: 'acount',
               component: acount
             },
             {
-              path: 'user',
+              path: '/user',
               component: user
             }
           ]

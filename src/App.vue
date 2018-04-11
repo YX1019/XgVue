@@ -2,8 +2,9 @@
   <div id="app">
     <!--<img src="./assets/logo.png">-->
     <!--<topMenu></topMenu>-->
-    <router-view></router-view>
+    <!-- <index></index> -->
     <!--<router-view/>-->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -19,9 +20,9 @@ export default {
 </script>
 
 <style>
-  @import'./common/css/main.css';
+@import './common/css/main.css';
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
