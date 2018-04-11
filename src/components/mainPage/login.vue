@@ -1,18 +1,18 @@
 <template>
   <div class="">
     <div class="login">
-      <img src="images/loginBg.jpg" class="loginBg"/>
+      <img src="../../common/images/loginBg.jpg" class="loginBg"/>
       <div class="loginBox">
         <ul>
           <li class="reLi active">注册</li>
           <li class="loLi">登录</li>
         </ul>
-        <div class="registerCont">
+        <div class="registerCont" style="display:none;">
           <div class="loginItem">
             <input type="text" placeholder="请输入手机号码" class="inputItem" />
           </div>
           <div class="loginItem">
-            <input type="text" placeholder="请输入图中字符" class="codeInput" id="ImgCode" /><img src="images/codeImg.jpg" class="imgCode" id="reloadImage" onclick="changeImg()" /></div>
+            <input type="text" placeholder="请输入图中字符" class="codeInput" id="ImgCode" /><img src="../../common/images/codeImg.jpg" class="imgCode" id="reloadImage" onclick="changeImg()" /></div>
           <div class="loginItem">
             <input type="text" placeholder="请输入手机验证码" class="codeInput" id="code" />
             <input type="button" value="获取验证码" class="codebtn" onclick="smsSend(this)" />
@@ -26,7 +26,7 @@
           <p class="tip"><i></i> 我已阅读并同意<a href="http://app.xingelc.com/protocol/agreement/register.html" target="_blank">《注册协议》</a></p>
           <p class="regBtn" onclick="getRegister();">立即领取698元红包</p>
         </div>
-        <div class="loginCont" style="display:none;">
+        <div class="loginCont" >
           <h2>欢迎登录鑫格理财</h2>
           <div class="loginItem">
             <input type="text" placeholder="请输入手机号码" class="inputItem" />
@@ -37,9 +37,7 @@
           <div class="loginItem">
             <input type="text" placeholder="请输入图中字符" class="codeInput" id="ImgCode" /><img src="images/codeImg.jpg" class="imgCode" id="reloadImage" onclick="changeImg()" /></div>
           <p class="tip tip1"><i></i> 记住用户名<a class="forgotPwd" href="getPwd.html">忘记密码?</a></p>
-          <p class="regBtn">立即登录</p>
-
-
+          <p class="regBtn" @click="login()">立即登录</p>
         </div>
       </div>
     </div>
@@ -51,11 +49,24 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'login',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    login () {
+      let options = {
+        url: '/api/login',
+        method: 'post'
+      }
+      this.axios(options).then(res => {
+        let data = res.data
+        console.log(data, res)
+      })
     }
   }
 }

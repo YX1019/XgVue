@@ -14,6 +14,7 @@ import bankCard from '@/components/myAcount/bankCard'
 import redPack from '@/components/myAcount/redPack'
 import invitation from '@/components/myAcount/invitation'
 import message from '@/components/myAcount/message'
+import login from '@/components/mainPage/login'
 
 Vue.use(Router)
 
@@ -29,11 +30,11 @@ export default new Router({
       name: 'noviceWelfare',
       component: noviceWelfare
     },
-    // {
-    //   path: '/indexList',
-    //   name: 'indexList',
-    //   component: indexList
-    // },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
     {
       path: '/myAcount',
       name: 'myAcount',

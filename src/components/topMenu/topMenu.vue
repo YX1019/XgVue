@@ -5,7 +5,7 @@
       <div class="xg-container xg-gray">
         <i class="icon-z-caller left" style="font-size:26px;margin-top:7px;margin-right:5px;color:#666;"></i>客服热线：400-138-0656&nbsp;&nbsp;服务时间：9:00-21:00
         <div class="xg-header-top-right right font12">
-          <a class="xg-blue">注册/登录</a>|
+          <a class="xg-blue" @click='toLogin()'>注册/登录</a>|
           <a>帮助中心</a>|
           <a>联系我们</a>
         </div>
@@ -57,6 +57,9 @@ export default {
         this.$router.push({ path: 'noviceWelfare' })
       }
       console.log(index)
+    },
+    toLogin: function () {
+      this.$router.push({ path: 'login' })
     }
   }
 }
